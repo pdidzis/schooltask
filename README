@@ -1,0 +1,13 @@
+s = []
+num = 1
+answer = 0
+while  num != 0:
+    num = int(input('Enter the number sequence: '))
+    s.append(num) ##Adding every number to list
+s.pop() ##Deleting last number from list because last number is 0
+lastnumber =s[-1]
+x = 0
+for x in s:
+    if lastnumber > x:  #Checking every number in list if its bigger than last number it will add +1 to answer
+        answer = answer +1
+print(answer)
